@@ -1,5 +1,9 @@
 package main
 
+// Main purpose of Binary Search is only to
+// give you the position of the value you want.
+// So the array should be Sorted and Unique.
+
 import (
 	"bufio"
 	"errors"
