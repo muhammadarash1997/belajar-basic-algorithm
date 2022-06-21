@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// Sort by key
 func main() {
 	myMap := map[string]int{"Alice": 2, "Cecil": 1, "Mark": 2, "Bob": 3}
 
@@ -19,3 +20,9 @@ func main() {
 		fmt.Println(k, myMap[k])
 	}
 }
+
+// OUTPUT
+// Alice 2
+// Bob 3
+// Cecil 1
+// Mark 2

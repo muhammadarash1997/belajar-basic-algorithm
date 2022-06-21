@@ -13,9 +13,12 @@ func main() {
 
 	fmt.Println(strings.Compare("Hi", "Hello"))
 
+	fmt.Println(strings.Compare("Hi", "hi"))
+
 }
 
 // OUTPUT
 // -1
 // 0
 // 1
+// -1

@@ -3,34 +3,24 @@ package main
 import (
 	"fmt"
 	"sort"
-	"strings"
 )
-
-type Nodes []Node
 
 type Node struct {
 	key string
 	value int
 }
 
+// Sort by key and value
+// Sort by value first then by key
 func main() {
-	// iNodes := Nodes{
-	// 	{"Alice", 2},
-	// 	{"Cecil", 1},
-	// 	{"Mark", 2},
-	// 	{"Biky", 2},
-	// 	{"Bob", 3},
-	// }
 
-	myMap := map[string]int{"Alice": 2, "Cecil": 1, "Mark": 2, "Biky": 2, "Bob": 3}
-
-	iNodes := Nodes{}
-
+	// Mapping map to struct
+	myMap := map[string]int{"Biky": 2, "Cecil": 1, "Mark": 2, "Alice": 2, "Bob": 3}
+	iNodes := []Node{}
 	for k, v := range myMap {
 		iNodes = append(iNodes, Node{k, v})
 	}
-
-	fmt.Println(iNodes)
+	fmt.Println("Before:", iNodes)
 
 	sort.Slice(iNodes, func(i, j int) bool {
 		if iNodes[i].value < iNodes[j].value {
@@ -42,5 +32,9 @@ func main() {
 		return iNodes[i].key < iNodes[j].key
 	})
 
-	fmt.Println(iNodes)
+	fmt.Println("After", iNodes)
 }
+
+// OUTPUT
+// Before: [{Biky 2} {Bob 3} {Alice 2} {Cecil 1} {Mark 2}]
+// After [{Cecil 1} {Alice 2} {Biky 2} {Mark 2} {Bob 3}]

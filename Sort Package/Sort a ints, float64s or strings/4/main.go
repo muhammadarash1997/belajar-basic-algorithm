@@ -8,9 +8,13 @@ import (
 func main() {
 	slice := []int32{4, 2, 3, 2, 1}
 
-	fmt.Println("Before", slice)
+	fmt.Println("Before:", slice)
 	sort.Slice(slice, func(i, j int) bool {
 		return slice[i] < slice[j]
 	})
-	fmt.Println("After", slice)
+	fmt.Println("After:", slice)
 }
+
+// OUTPUT
+// Before: [4 2 3 2 1]
+// After: [1 2 2 3 4]
