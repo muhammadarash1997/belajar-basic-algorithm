@@ -24,4 +24,7 @@ func main() {
 
 	s = strings.SplitN("xyz", "p", 3)
 	fmt.Println(s)
+
+	s = strings.SplitN("xyz", "", 3)
+	fmt.Println(s)
 }

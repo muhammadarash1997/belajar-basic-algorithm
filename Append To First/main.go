@@ -11,8 +11,7 @@ func main() {
 }
 
 func AppendToFirst(f int, s []int) []int {
-	l := []int{}
-	l = append(l, f)
+	l := []int{f}
 	l = append(l, s...)
 	return l
 }

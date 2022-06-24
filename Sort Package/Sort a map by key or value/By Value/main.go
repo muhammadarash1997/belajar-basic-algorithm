@@ -22,32 +22,8 @@ func main() {
 	}
 	fmt.Println("Before:", iNodes)
 
-	// sort.Slice(iNodes, func(i, j int) bool {
-	// 	if iNodes[i].value < iNodes[j].value {
-	// 		return true
-	// 	}
-	// 	if iNodes[i].value > iNodes[j].value {
-	// 		return false
-	// 	}
-	// 	return iNodes[i].key < iNodes[j].key
-	// })
-
 	sort.Slice(iNodes, func(i, j int) bool {
-		if iNodes[i].value < iNodes[j].value {
-			return true
-		}
-		if iNodes[i].value > iNodes[j].value {
-			return false
-		}
-		if iNodes[i].value == iNodes[j].value {
-			if iNodes[i].key < iNodes[j].key {
-				return true
-			}
-			if iNodes[i].key > iNodes[j].key {
-				return false
-			}
-		}
-		return true
+		return iNodes[i].value < iNodes[j].value
 	})
 	fmt.Println("After", iNodes)
 }
