@@ -11,12 +11,8 @@ func CreateFibonacciNumbers(K int) []int {
 	Fib := []int{}
 
 	for i := 0; i < K; i++ {
-		if i == 0 {
-			Fib = append(Fib, 0)
-			continue
-		}
-		if i == 1 {
-			Fib = append(Fib, 1)
+		if i == 0 || i == 1 {
+			Fib = append(Fib, i)
 			continue
 		}
 
