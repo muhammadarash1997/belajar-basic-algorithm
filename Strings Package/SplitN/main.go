@@ -28,3 +28,12 @@ func main() {
 	s = strings.SplitN("xyz", "", 3)
 	fmt.Println(s)
 }
+
+// OUTPUT
+// [a b,c]
+// [Hello Go Golang]
+// [a b c]
+// [a,b,c]
+// [xyz]
+// [xyz]
+// [x y z]

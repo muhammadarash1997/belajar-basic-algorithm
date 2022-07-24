@@ -16,3 +16,7 @@ func main() {
 
 	fmt.Printf("After swap: %v\n", slice)
 }
+
+// OUTPUT
+// Before swap: [1 2 3 4 5]
+// After swap: [1 2 5 4 3]

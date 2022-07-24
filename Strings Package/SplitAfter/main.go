@@ -25,3 +25,11 @@ func main() {
 	s = strings.SplitAfter("xyz", "p")
 	fmt.Println(s)
 }
+
+// OUTPUT
+// [a, b, c]
+// [Hello  Go  Go lang]
+// [a b c]
+// [a, b, c]
+// [xyz]
+// [xyz]

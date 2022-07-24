@@ -25,3 +25,11 @@ func main() {
 	s = strings.ReplaceAll("Go Golang G", "", "EO")
 	fmt.Println(s)
 }
+
+// OUTPUT
+// EOo EOolang EO
+// EOo EOolang EO
+// EOo EOolang EO
+// EOo EOolang EO
+// o olang 
+// EOGEOoEO EOGEOoEOlEOaEOnEOgEO EOGEO

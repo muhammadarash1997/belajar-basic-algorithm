@@ -17,3 +17,9 @@ func main() {
 
 	fmt.Println(strings.Contains("", ""))
 }
+
+// OUTPUT
+// true
+// false
+// true
+// true

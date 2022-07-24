@@ -21,3 +21,9 @@ func main() {
 	res = strings.HasPrefix("Hello Geeks", "")
 	fmt.Println(res)
 }
+
+// OUTPUT
+// true
+// true
+// false
+// true

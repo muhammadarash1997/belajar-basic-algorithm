@@ -19,3 +19,9 @@ func main() {
 	s = strings.Repeat("BI", 3)
 	fmt.Println(s)
 }
+
+// OUTPUT
+// gogo
+// lang
+// HIHIHIHI
+// BIBIBI

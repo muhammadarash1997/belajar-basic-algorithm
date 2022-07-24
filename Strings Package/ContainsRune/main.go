@@ -17,3 +17,7 @@ func main() {
 	fmt.Println(strings.ContainsRune("peek", 97))
 
 }
+
+// OUTPUT
+// true
+// false
