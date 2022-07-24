@@ -29,6 +29,7 @@ func main() {
 		if iNodes[i].key > iNodes[j].key {
 			return false
 		}
+		// Di bawah ini akan tereksekusi ketika iNodes[i].key = iNodes[j].key
 		if iNodes[i].value < iNodes[j].value {
 			return true
 		}
